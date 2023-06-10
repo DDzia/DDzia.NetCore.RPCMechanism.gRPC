@@ -1,0 +1,31 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <OutputType>Library</OutputType>
+
+	  <PackageId>DDzia.NetCore.RPCMechanism.gRPC</PackageId>
+	  <Version>0.1.0</Version>
+	  <Authors>Dzianis Dziarkach</Authors>
+	  <Company>DDzia</Company>
+	  <Product>DDzia.NetCore.RPCMechanism.gRPC</Product>
+	  <PackageTags>rpc;grpc</PackageTags>
+	  <IsPackable>true</IsPackable>
+	  <Description>
+		  Server and clicent library to hosting and call remote gRPC services.
+	  </Description>
+	  <PackageIconUrl>https://grpc.io/img/logos/grpc-icon-color.png</PackageIconUrl>
+  </PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Grpc.Core" Version="2.46.6" />
+		<PackageReference Include="Grpc.Net.Client" Version="2.53.0" />
+		<PackageReference Include="Microsoft.Extensions.Configuration.Abstractions" Version="7.0.0" />
+		<PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="7.0.0" />
+		<PackageReference Include="Microsoft.Extensions.Hosting.Abstractions" Version="7.0.0" />
+		<PackageReference Include="Microsoft.Extensions.Options" Version="7.0.1" />
+	</ItemGroup>
+
+</Project>
